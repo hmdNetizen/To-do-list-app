@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>My Daily To-Do list</h2>
+        <form id="task-form">
+            <div>
+                <input type="text" class="input-field" id="tasks" placeholder="New Task" autocomplete="off">
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="Submit" class="btn" id="submit-btn">
+            </div>
+        </form>
+        <ol class="task-collection"></ol>
+        <div class="filter-container">
+            <input type="text" class="filter-field" id="filter" placeholder="Filter Tasks">
+        </div>
+        <div class="clear">
+            <input type="submit" value="Clear Tasks" class="black" id="clear-btn">
+        </div>
+        <div class="completed-tasks">
+            <h2>Completed Tasks</h2>
+        </div>
+        <ol class="completed"></ol>
+        <div class='completed-btn-container'>
+            <input type="submit" value="Clear Completed Tasks" id="clear-completed">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
